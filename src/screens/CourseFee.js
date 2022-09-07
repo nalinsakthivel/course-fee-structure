@@ -22,7 +22,6 @@ const CourseFee = () => {
   const [amount, setAmount] = useState(null);
 
   const onAmount = () => {
-    console.log(amt);
     setAmount(amt);
   };
 
@@ -33,7 +32,6 @@ const CourseFee = () => {
           <Pressable
             onPress={() => {
               setCourses(null);
-              console.log('dvhvjhsvjhsdb', item.FOREIGN.ALL_COURSES[i].amount);
               setAmount(item.FOREIGN.ALL_COURSES[i].amount);
             }}
             style={styles.cardContainer}>
@@ -88,7 +86,6 @@ const CourseFee = () => {
           containerStyle={styles.dropDownCon}
           style={styles.dropDownStyle}
           onPress={value => {
-            console.log(value);
             setCourses(value);
             setAmount(null);
           }}

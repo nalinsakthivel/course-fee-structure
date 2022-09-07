@@ -19,7 +19,6 @@ const ExamFees = () => {
         <View style={style.outercardContainer} key={index}>
           <Pressable
             onPress={() => {
-              console.log('item', i);
               dispatch(setAmount(item[i].ALL_COURSES.ALL_LEVEL.amount));
               navigation.navigate('CourseFee');
             }}
